@@ -86,7 +86,7 @@ async function speak() {
   console.log(`isEnglish ${isEnglish}`);    
 
 
-//case: 1-shot natural language generation
+//case 1: 1-shot natural language generation
 // if (withBrackets(textInput)){
 //   trimResponse = true;
 //   typeOfInputRequest = "Welcome to natural language generation mode";
@@ -104,7 +104,7 @@ async function speak() {
 //   console.log(`Model input: ${userInput}\n`);
   
 // }
- //case: use 4.3. 1-shot machine translation
+ //case 2: 1-shot machine translation
 // if(!withBrackets(textInput) && !isEnglish){
 //   trimResponse = true;
 //   typeOfInputRequest = "Welcom to machine translation mode";
@@ -117,7 +117,7 @@ async function speak() {
 //   console.log(`Model input: ${userInput}\n`);
 //   console.log(`Ground truth: ${testOut}`);
 // } 
-// case : Query endpoint and parse response. Complete sentence
+// case 3: Query endpoint and parse response. Complete sentence
 if (!withBrackets(textInput) && isEnglish){
   typeOfInputRequest="Welcom to sentence completion mode";
   trimResponse = false;
