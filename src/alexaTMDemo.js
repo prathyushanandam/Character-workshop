@@ -169,36 +169,3 @@ function withBrackets(input) {
 }
 
 DemoUtils.loadDemo(createScene);
-
-// //case: 1-shot natural language generation
-// if (withBrackets(textInput)){
-//   trimResponse = true;
-//   typeOfInputRequest = "Welcome to natural language generation mode";
-//   console.log(`input with brackets: ${textInput}`);
-//   console.log('use 1-shot natural language generation');
-
-//   const trainInp = "name[The Punter], food[Indian], priceRange[cheap]";
-//   const trainOut = "The Punter provides Indian food in the cheap price range.";
-  
-//   // "name[Loch Fyne], food[French], customer rating[high], area[riverside], near[The Rice Boat]";
-//   // "For luxurious French food, the Loch Fyne is located by the river next to The Rice Boat."
-//   // link to test examples: https://huggingface.co/datasets/e2e_nlg
-
-//   userInput = `[CLM] ${trainInp} ==> sentence describing the place: ${trainOut} ; ${textInput} ==> sentence describing the place:`;
-//   console.log(`Model input: ${userInput}\n`);
-  
-// }
-//  //case: use 4.3. 1-shot machine translation
-// if(!withBrackets(textInput) && !isEnglish){
-//   trimResponse = true;
-//   typeOfInputRequest = "Welcom to machine translation mode";
-//   const trainInp = "Das Parlament erhebt sich zu einer Schweigeminute.";
-//   const trainOut = "The House rose and observed a minute' s silence";
-//   const testOut = "Membership of Parliament: see Minutes;"; 
-  
-//   userInput = `[CLM] ${trainInp};Translation in English: ${trainOut} ; Sentence: ${textInput}; Translation in English:`;
-//   console.log(`machine translation: ${textInput}`);
-//   console.log(`Model input: ${userInput}\n`);
-//   console.log(`Ground truth: ${testOut}`);
-// } 
-// // case : Query endpoint and parse response. Complete sentence
