@@ -1,4 +1,4 @@
-# Amazon Sumerian Host Babylon.js Demos
+# Amazon Babylon.js Demos
 
 This directory contains a number of demonstrations, each focused on a different feature of the Hosts API.
 
